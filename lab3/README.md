@@ -26,7 +26,7 @@ cd java/lab3
 ### Компіляція файлу
 
 ```bash
-javac Lab3.java
+javac *.java
 ```
 
 ### Запуск файлу
