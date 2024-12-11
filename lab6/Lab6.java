@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 public class Lab6 {
     public static void main(String[] args) {
+
+        int studentNumber = 16;
+        int C2 = studentNumber % 2;
+        int C3 = studentNumber % 3;
+
+        System.out.println("C2: " + C2 + " - інтерфейс List");
+        System.out.println("C3:" + C3 + " - однозв’язний список");
+        
         CustomLinkedList<String> list = new CustomLinkedList<>();
         list.add("Помідор");
         list.add("Огірок");
@@ -14,7 +22,7 @@ public class Lab6 {
         // Запит на введення індексу для видалення
         System.out.print("Введіть індекс елемента, який видалити: ");
         int indexToRemove = sc.nextInt();
-        sc.nextLine(); // Очищення залишків нового рядка після числа
+        sc.nextLine();
 
         if (indexToRemove >= 0 && indexToRemove < list.size()) {
             list.remove(indexToRemove);
@@ -23,11 +31,10 @@ public class Lab6 {
             System.out.println("Невірний індекс. Спробуйте ще раз.");
         }
 
-        // Запит на введення рядка для перевірки
+        // Запит на введення овоча для перевірки
         System.out.print("Введіть овоч для перевірки його наявності в списку: ");
-        String elementToCheck = sc.nextLine().trim(); // Видалити зайві пробіли
+        String elementToCheck = sc.nextLine().trim();
 
-        System.out.println("Введений текст: '" + elementToCheck + "'"); // Відладковий вивід
         boolean contains = list.contains(elementToCheck);
         System.out.println("Чи містить '" + elementToCheck + "': " + contains);
 
