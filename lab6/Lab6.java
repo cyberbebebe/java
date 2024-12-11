@@ -8,7 +8,7 @@ public class Lab6 {
         int C3 = studentNumber % 3;
 
         System.out.println("C2: " + C2 + " - інтерфейс List");
-        System.out.println("C3:" + C3 + " - однозв’язний список");
+        System.out.println("C3: " + C3 + " - однозв’язний список");
         
         CustomLinkedList<String> list = new CustomLinkedList<>();
         list.add("Помідор");
